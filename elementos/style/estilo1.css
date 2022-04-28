@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/fondo2.png);
+    background-image: url(../img/fondo3.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,36 +16,46 @@ body{
 .slogan{
     width: 40%;
 }
+
+.opciones{
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
 .principal{
     display: flex;
     justify-content: center;
     width: 100%;
     height: 250px;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 nav{
-    width: 40%;
-    height: 280px;
-    padding: 10px;
-    color: #F9FFA4;
+    width: 100%;
+    height: 260px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
     border: solid #493939;
     background-color: #493939;
     border-radius: 5px;
 }
-.buscador{
-    width: 58%;
-    padding-left: 130px;
-}
 h6{
-    font-size: 22px;
+    font-size: 24px;
 }
 a{
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(158, 155, 151);
+    text-decoration: none;
 }
 a:hover{
     color: rgb(113, 104, 93);
     background-color: #F9FFA4;
     border-radius: 5px;
+    text-decoration: none;
 }

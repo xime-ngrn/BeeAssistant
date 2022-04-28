@@ -1,0 +1,74 @@
+body{
+    background-image: url(../img/fondo3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #3e3c3d;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Colores
+    #F8B400 naranja mostaza
+    #FEB139 naranja
+    #f6ab55 naranja opaco
+    #FFF56D amarillo pastel
+    #F6F54D amarillo
+
+*/
+
+.principal{
+    height: 620px;
+    display: flex;
+}
+nav{
+    width: 30%;
+    height: 94%;
+    padding: 10px;
+}
+.buscador{
+    width: 68%;
+    height: 94%;
+    padding: 10px;
+}
+
+.regini{
+    display: flex;
+    justify-content: center;
+    height: 620px;
+}
+.centrado{
+    width: 450px;
+    height: 350px;
+    margin-top: 95px;
+    padding: 20px;
+    border: solid #F8B400;
+    border-radius: 7px;
+}
+.centrador{
+    width: 450px;
+    height: 450px;
+    margin-top: 65px;
+    padding: 20px;
+    border: solid #F8B400;
+    border-radius: 7px;
+}
+input{
+    height: 18px;
+    border-radius: 5px;
+    border-color: #FEB139;
+    background-color: #FFF56D;
+}
+input:focus{
+    background-color: #fff04cdd;
+}
+button{
+    width: 150px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #FFDE59;
+    color: #3e3c3d;
+    font-size: 22px;
+    cursor: grabbing;
+    /*cursor: url(../img/logobee.png);*/
+}
