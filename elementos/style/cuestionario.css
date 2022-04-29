@@ -1,0 +1,50 @@
+body{
+    background-image: url(../img/fondo3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #3e3c3d;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-around;
+}
+.slogan{
+    width: 40%;
+    cursor: url(../img/tarritomielpng.png), auto;
+}
+
+.preferencias{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px; 
+}
+.centrado{
+    width: 50%;
+    padding: 15px;
+    border: solid #F8B400;
+}
+select{
+    border-radius: 7px;
+    border-color: #FEB139;
+    background-color: #FFF56D;
+    font-size: 18px;
+}
+button{
+    width: 150px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #FFDE59;
+    border-color: #FEB139;
+    color: #3e3c3d;
+    font-size: 22px;
+    cursor: url(../img/tarritomiel.png), auto;
+    /*cursor: grabbing;
+    <a href="https://www.flaticon.es/iconos-gratis/miel" title="miel iconos">Miel iconos creados por Freepik - Flaticon</a>
+    */
+}

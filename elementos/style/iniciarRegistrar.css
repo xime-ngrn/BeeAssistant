@@ -67,8 +67,9 @@ button{
     height: 35px;
     border-radius: 15px;
     background-color: #FFDE59;
+    border-color: #FEB139;
     color: #3e3c3d;
     font-size: 22px;
-    cursor: grabbing;
+    cursor: url(../img/tarritomiel.png), auto;
     /*cursor: url(../img/logobee.png);*/
 }
