@@ -1,0 +1,66 @@
+body{
+    background-image: url(../img/fondo4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #3e3c3d;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    height: 620px;
+}
+.modificar{
+    width: 450px;
+    height: 490px;
+    margin-top: 60px;
+    padding: 20px;
+    border: solid #F8B400;
+    border-radius: 7px;
+}
+.centrado{
+    width: 500px;
+    height: 510px;
+    margin-top: 50px;
+    padding: 20px;
+    border: solid #F8B400;
+    border-radius: 7px;
+}
+input{
+    height: 18px;
+    border-radius: 5px;
+    border-color: #FEB139;
+    background-color: #FFF56D;
+}
+input:focus{
+    background-color: #fff04cdd;
+}
+button{
+    width: 150px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #FFDE59;
+    border-color: #FEB139;
+    color: #3e3c3d;
+    font-size: 22px;
+    cursor: url(../img/tarritomiel.png), auto;
+}
+select{
+    border-radius: 7px;
+    border-color: #FEB139;
+    background-color: #FFF56D;
+    font-size: 18px;
+}
+textarea{
+    border-radius: 5px;
+    border-color: #FEB139;
+    background-color: #FFF56D;
+    color: #3e3c3d; 
+}
+textarea:focus{
+    background-color: #fff04cdd;
+    color: black;
+}
