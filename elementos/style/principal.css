@@ -1,0 +1,112 @@
+body{
+    background-image: url(../img/fondo2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #3e3c3d;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+    padding: 10px;
+}
+.first{
+    width: 100%;
+    height: 585px;
+    display: flex;
+    flex-direction: row;
+}
+.lateral_i{
+    width: 35%;
+    height: 96.5%;
+    padding: 10px;
+    background-color: #FFF56D;
+}
+.invitado{
+    border-top: solid #3e3c3d;
+    border-bottom: solid #3e3c3d;
+}
+
+.lateral_d{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.arriba{
+    width: 96%;
+    height: 35%;
+    padding: 15px;
+}
+
+.arribaAdmin{
+    width: 96%;
+    height: 35%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.arribaizq{
+    margin-left: 40px;
+    width: 40%;
+}
+.arribader{
+    width: 50%;
+}
+
+.resultados{
+    width: 96%;
+    height: 70%;
+    padding: 15px;
+    background-color: #ffe76d;
+}
+.comunicado{
+    height: 200px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: solid #F8B400;
+}
+select{
+    margin: 10px;
+    border-radius: 7px;
+    border-color: #FEB139;
+    background-color: #FFF56D;
+    font-size: 18px;
+}
+a{
+    font-size: 16px;
+    color: rgb(158, 155, 151);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(113, 104, 93);
+    background-color: #F9FFA4;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: url(../img/tarritomiel.png), auto;
+}
+
+#redireccion{
+    font-size: 20px;
+    color: rgb(158, 155, 151);
+    text-decoration: none;
+}
+#redireccion:hover{
+    color: rgb(113, 104, 93);
+    background-color: #F9FFA4;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: url(../img/tarritomiel.png), auto;
+}
+
+button{
+    width: 150px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #FFDE59;
+    border-color: #FEB139;
+    color: #3e3c3d;
+    font-size: 22px;
+    cursor: url(../img/tarritomiel.png), auto;
+    /*cursor: url(../img/logobee.png);*/
+}
