@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar datos</title>
+    <link rel="stylesheet" href="../../elementos/style/stylecomunicado.css">
+    <link rel="shortcut icon" href="../elementos/img/bee.png">
+</head>
+<body>
+    <div class="principal">
+        <div class="centrado">
+            <center><h2>Agregar Información</h2></center>
+            <br>
+            <form method="post" action="principalAdmin.html">
+                <label>Área: </label>
+                <select>
+                    <option>Básica</option>
+                    <option>Humanística</option>
+                    <option>De Carrera</option>
+                </select>
+                &nbsp;
+                <input type="text" placeholder="Especificación del Área">
+                &nbsp;&nbsp;
+                <input type="text" placeholder="Titulo del comunicado">
+                <br><br>
+
+                <div class="fechas">
+                    <label>Fecha de Publicación</label>&nbsp;
+                    <input type="date" placeholder="29/04/2022">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>Fecha de Obtención</label>&nbsp;
+                    <input type="date" placeholder="30/04/2022">
+                </div>
+
+                <br>
+                <input type="text" placeholder="¿De qué trata?">
+                <br><br>
+                <textarea id="comentarios" name="comentarios" placeholder="Descripción completa del comunicado" 
+                    style="height: 100px; width: 730px;"></textarea>
+                <br><br>
+                <label>Organizadores</label> &nbsp;
+                <textarea id="organizadores" name="organizadores" placeholder="Personal a cargo del evento, más información o dudas" 
+                    style="height: 20px; width: 530px;"></textarea>
+                <br><br>
+
+                <div class="fechas">
+                    <label>Fecha de Inicio</label>&nbsp;
+                    <input type="date" placeholder="09/05/2022">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>Fecha de Terminación</label>&nbsp;
+                    <input type="date" placeholder="09/06/2022">
+                </div>
+
+                <p align="right"><button type="submit" onclick="">Continuar</button></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

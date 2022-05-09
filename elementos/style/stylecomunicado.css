@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/fondo4.png);
+    background-image: url(../img/fondo3.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -8,6 +8,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.centrado{
+    width: 740px;
+    height: 545px;
+    margin-top: 20px;
+    padding: 20px;
+    border: solid #F8B400;
+    border-radius: 7px;
+}
 .principal{
     display: flex;
     justify-content: center;
@@ -21,15 +29,12 @@ body{
     border: solid #F8B400;
     border-radius: 7px;
 }
-.centrado{
-    width: 500px;
-    height: 510px;
-    margin-top: 50px;
-    padding: 20px;
-    border: solid #F8B400;
-    border-radius: 7px;
-}
 
+.fechas{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
 input{
     height: 18px;
     border-radius: 5px;
@@ -54,4 +59,14 @@ select{
     border-color: #FEB139;
     background-color: #FFF56D;
     font-size: 18px;
+}
+textarea{
+    border-radius: 5px;
+    border-color: #FEB139;
+    background-color: #FFF56D;
+    color: #3e3c3d; 
+}
+textarea:focus{
+    background-color: #fff04cdd;
+    color: black;
 }

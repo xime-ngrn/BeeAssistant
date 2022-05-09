@@ -7,6 +7,7 @@
     <title>Página Principal</title>
     <link rel="shortcut icon" href="../elementos/img/bee.png">
     <link rel="stylesheet" href="../elementos/style/principal.css">
+    <script src="../elementos/javascript/administrador.js"></script>
 </head>
 <body>
     <div class="first">
@@ -16,7 +17,7 @@
             <div class="usuario">
                 <h5>Usuario: </h5>
                 <h5>Nombre Administrador: </h5>
-                <a href="modificarDatos.html">Modificar mis datos</a>
+                <a href="administradores/modificarDatos.html">Modificar mis datos</a>
             </div>
             <br>
             <p>Fecha: DD/MM/AA</p> 
@@ -27,33 +28,33 @@
             <div class="arribaAdmin">
                 <div class="arribaizq">
                     <h5>Administradores</h5>
-                <select name="select">
-                    <option value="value1">Agregar Administrador</option>
-                    <option value="value2">Eliminar Administrador</option>
-                    <option value="value3">Consultar Administradores</option>
+                <select name="configAdmin" id="configAdmin">
+                    <option value="0">Agregar Administrador</option>
+                    <option value="1">Eliminar Administrador</option>
+                    <option value="2">Consultar Administradores</option>
                 </select>
-                <button type="submit" onclick="">Realizar</button>
+                <button type="submit" onclick="admin(this)">Realizar</button>
                 </div>
                 <div class="arribader">
                     <h5>Usuarios</h5>
-                <select name="select">
-                    <option value="value1">Consultar Usuarios</option>
-                    <option value="value1">Eliminar Usuario</option>
+                <select name="usu" id="usu">
+                    <option value="0">Consultar Usuarios</option>
+                    <option value="1">Eliminar Usuario</option>
                 </select>
                 <br>
-                <button type="submit" onclick="">Realizar</button>
+                <button type="submit" onclick="usuario(this)">Realizar</button>
                 </div>
             </div>
             <div class="resultados">
                 <h2>Información:</h2>
-                <form name="info" action="ingresarInformacion.html" method="post">
+                <form name="info" action="informacion/ingresarInfo.html" method="post">
                     <input type="radio" name="informacion" value="AgregarInfo">&nbsp Agregar Información
                     <br><br>
-                    <input type="radio" name="informacion" value="EliminarInfo" disabled>&nbsp Eliminar Información
+                    <input type="radio" name="informacion" value="EliminarInfo">&nbsp Eliminar Información
                     <br><br>
-                    <input type="radio" name="informacion" value="ModificarInfo" disabled>&nbsp Modificar Información
+                    <input type="radio" name="informacion" value="ModificarInfo">&nbsp Modificar Información
                     <br><br><br>
-                    <button type="submit" onclick="">Realizar</button>
+                    <button type="submit" onclick="info(this)">Realizar</button>
                 </form>
             </div>
         </div>
