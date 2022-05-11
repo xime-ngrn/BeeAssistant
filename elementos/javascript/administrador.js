@@ -2,7 +2,6 @@
 
 function admin(formulario){
     var accion=document.getElementById("configAdmin").value;
-    alert(accion);
     if(accion == 0){
         location.href="administradores/agregarAdmin.html";
     }else if(accion == 1){
@@ -14,7 +13,6 @@ function admin(formulario){
 
 function usuario(formulario){
     var accion=document.getElementById("usu").value;
-    alert(accion)
     if(accion == 0){
         location.href="usuarios/consultarUsu.html";
     }else{
@@ -22,6 +20,21 @@ function usuario(formulario){
     }
 }
 
-function info(formulario){
+function selectinfo(formulario){
+    var accionInfo=document.querySelector('input[name=informacionRadio]:checked').value;
+    alert(accionInfo);
+
+    if(accionInfo==0){
+        location.href="informacion/ingresarInfo.html";
+    }
+    else if(accionInfo==1){
+        location.href="informacion/eliminarInfo.html";
+    }
+    else if(accionInfo==2){
+        location.href="informacion/modificarInfo.html";
+    }
+    else{
+        alert("No se ha seleccionado ninguna acción");
+    }
 
 }

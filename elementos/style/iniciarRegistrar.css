@@ -53,6 +53,10 @@ nav{
     border: solid #F8B400;
     border-radius: 7px;
 }
+
+hr{
+    background-color: #FFF56D;
+}
 input{
     height: 18px;
     border-radius: 5px;

@@ -1,0 +1,67 @@
+body{
+    background-image: url(../img/fondo4.png);
+    background-size: 100%;
+    background-position: center;
+    color: #3e3c3d;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+}
+
+.regini{
+    display: flex;
+    justify-content: center;
+    height: 620px;
+}
+.centrado{
+    width: 450px;
+    height: 400px;
+    margin-top: 55px;
+    padding: 20px;
+    border: solid #F8B400;
+    border-radius: 7px;
+}
+.centradoUs{
+    width: 600px;
+    height: 400px;
+    margin-top: 55px;
+    padding: 20px;
+    border: solid #F8B400;
+    border-radius: 7px;
+}
+.centrador{
+    width: 450px;
+    height: 475px;
+    margin-top: 65px;
+    padding: 20px;
+    border: solid #F8B400;
+    border-radius: 7px;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: #F8B400;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #3e3c3d;
+}
+h6{
+    font-size: 24px;
+}
+p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(158, 155, 151);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(113, 104, 93);
+    background-color: #F9FFA4;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: url(../img/tarritomiel.png), auto;
+}

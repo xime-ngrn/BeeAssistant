@@ -5,38 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar datos</title>
-    <link rel="stylesheet" href="../elementos/style/stylemodificadores.css">
-    <link rel="shortcut icon" href="../elementos/img/bee.png">
+    <link rel="stylesheet" href="../../elementos/style/stylemodificadores.css">
+    <link rel="shortcut icon" href="../../elementos/img/bee.png">
+    <script src="../../elementos/javascript/administrador.js"></script>
 </head>
 <body>
     <div class="principal">
         <div class="modificar">
             <center><h2>Modificador Datos Administrador</h2></center>
             <br>
-            <form method="post" action="principalAdmin.html">
-                <label>Modificar: </label>
-                <select id="box"name="select">
-                    <option value="value1">Todos los datos</option>
-                    <option value="value2" disabled>Boleta</option>
-                    <option value="value3" disabled>Nombre</option>
-                    <option value="value4" disabled>Apellido paterno</option>
-                    <option value="value5" disabled>Apellido materno</option>
-                    <option value="value6" disabled>Correo</option>
-                </select>
-                <br><br>
+            <form method="post" action="../principalAdmin.html">
+                <label>Modifica los datos que desees </label>
+                <br><br><br>
                 <label>Usuario: </label>
                 <input type="text" placeholder="Obtención Usuario Admin" readonly>
                 <br><br>
                 <label>Nuevo Usuario Administrador: </label>
                 <input type="text" id="modificarUsuarioAdmin">
-                <br>
-                <label>Nuevo Nombre de Administrador: </label>
-                <input type="text" id="modificarNomAdmin">
-                <br>
-                <hr size="1">
-                <label>Introduce tu contraseña: </label>
-                <input type="password">
                 <br><br>
+                <label>Nombre de Administrador: </label>
+                <input type="text" id="modificarNomAdmin">
+                <br><br><br>
+                <hr size="3">
+                <br>
+                <label>Contraseña: </label>
+                <input type="password" id="modificarPassAdmin">
                 <p align="right"><button type="submit" onclick="">Continuar</button></p>
                 
             </form>

@@ -47,14 +47,14 @@
             </div>
             <div class="resultados">
                 <h2>Información:</h2>
-                <form name="info" action="informacion/ingresarInfo.html" method="post">
-                    <input type="radio" name="informacion" value="AgregarInfo">&nbsp Agregar Información
+                <form name="info" action="" method="post">
+                    <input type="radio" name="informacionRadio" value="0">&nbsp Agregar Información
                     <br><br>
-                    <input type="radio" name="informacion" value="EliminarInfo">&nbsp Eliminar Información
+                    <input type="radio" name="informacionRadio" value="1">&nbsp Eliminar Información
                     <br><br>
-                    <input type="radio" name="informacion" value="ModificarInfo">&nbsp Modificar Información
+                    <input type="radio" name="informacionRadio" value="2">&nbsp Modificar Información
                     <br><br><br>
-                    <button type="submit" onclick="info(this)">Realizar</button>
+                    <button type="submit" onclick="selectinfo(this)">Realizar</button>
                 </form>
             </div>
         </div>
