@@ -12,9 +12,11 @@ body{
 .encabezado{
     display: flex;
     justify-content: space-around;
+    padding-left: 50px;
 }
 .slogan{
     width: 40%;
+    padding-right: 50px;
     cursor: url(../img/tarritomielpng.png), auto;
 }
 

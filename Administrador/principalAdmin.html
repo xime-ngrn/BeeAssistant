@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
     <link rel="shortcut icon" href="../elementos/img/bee.png">
-    <link rel="stylesheet" href="../elementos/style/principal.css">
-    <script src="../elementos/javascript/administrador.js"></script>
+    <link rel="stylesheet" href="../elementos/style/principalAdmin.css">
 </head>
 <body>
     <div class="first">
@@ -22,40 +21,34 @@
             <br>
             <p>Fecha: DD/MM/AA</p> 
             <a href="../index.html" id="redireccion"><img src="../elementos/img/botonbee.png" 
-                width="45" height="45"> &nbsp Cerrar Sesión</a>
+                width="45" height="45"> &nbsp Cerrar Sesión &nbsp &nbsp</a>
         </div>
         <div class="lateral_d">
             <div class="arribaAdmin">
                 <div class="arribaizq">
-                    <h5>Administradores</h5>
-                <select name="configAdmin" id="configAdmin">
-                    <option value="0">Agregar Administrador</option>
-                    <option value="1">Eliminar Administrador</option>
-                    <option value="2">Consultar Administradores</option>
-                </select>
-                <button type="submit" onclick="admin(this)">Realizar</button>
+                    <h3>Administradores</h3>
+                    <button><a href="administradores/agregarAdmin.html">Agregar Administrador</a></button>
+                    <br><br>
+                    <button><a href="administradores/consultarAdmin.html">Consultar Administradores</a></button>
+                    <br><br>
+                    <button><a href="administradores/eliminarAdmin.html">Eliminar Administradores</a></button>
                 </div>
+
                 <div class="arribader">
-                    <h5>Usuarios</h5>
-                <select name="usu" id="usu">
-                    <option value="0">Consultar Usuarios</option>
-                    <option value="1">Eliminar Usuario</option>
-                </select>
-                <br>
-                <button type="submit" onclick="usuario(this)">Realizar</button>
+                    <h3>Usuarios</h3>
+                    <button><a href="usuarios/consultarUsu.html">Consultar Usuarios</a></button>
+                    <br><br>
+                    <button><a href="usuarios/eliminarUsu.html">Eliminar Usuarios</a></button>
                 </div>
             </div>
+            
             <div class="resultados">
-                <h2>Información:</h2>
-                <form name="info" action="" method="post">
-                    <input type="radio" name="informacionRadio" value="0">&nbsp Agregar Información
-                    <br><br>
-                    <input type="radio" name="informacionRadio" value="1">&nbsp Eliminar Información
-                    <br><br>
-                    <input type="radio" name="informacionRadio" value="2">&nbsp Modificar Información
-                    <br><br><br>
-                    <button type="submit" onclick="selectinfo(this)">Realizar</button>
-                </form>
+                <h3>Información</h3>
+                <button><a href="informacion/ingresarInfo.html">Agregar Información</a></button>
+                <br><br>
+                <button><a href="informacion/modificarInfo.html">Modificar Información</a></button>
+                <br><br>
+                <button><a href="informacion/eliminarInfo.html">Eliminar Información</a></button>
             </div>
         </div>
     </div>

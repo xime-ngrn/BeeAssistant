@@ -21,24 +21,20 @@ body{
     padding: 10px;
     background-color: #FFF56D;
 }
-.invitado{
-    border-top: solid #3e3c3d;
-    border-bottom: solid #3e3c3d;
-}
-
 .lateral_d{
-    width: 65%;
+    width: 62%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.arriba{
-    width: 96%;
-    height: 35%;
+.arribaAdmin{
+    width: 95%;
+    height: 50%;
     padding: 15px;
+    display: flex;
+    flex-direction: row;
 }
-
 .arribaizq{
     margin-left: 40px;
     width: 50%;
@@ -48,25 +44,12 @@ body{
 }
 
 .resultados{
-    width: 96%;
-    height: 70%;
-    padding: 15px;
+    width: 95%;
+    height: 45%;
+    padding: 30px;
     background-color: #ffe76d;
 }
-.comunicado{
-    height: 200px;
-    margin-top: 10px;
-    padding-left: 10px;
-    border-radius: 8px;
-    border: solid #F8B400;
-}
-select{
-    margin: 10px;
-    border-radius: 7px;
-    border-color: #FEB139;
-    background-color: #FFF56D;
-    font-size: 18px;
-}
+
 a{
     font-size: 16px;
     color: rgb(158, 155, 151);
@@ -86,7 +69,7 @@ a:hover{
     text-decoration: none;
 }
 #redireccion:hover{
-    color: rgb(113, 104, 93);
+    color: rgb(53, 46, 37);
     background-color: #F9FFA4;
     border-radius: 5px;
     text-decoration: none;
@@ -94,13 +77,10 @@ a:hover{
 }
 
 button{
-    width: 150px;
     height: 35px;
     border-radius: 15px;
     background-color: #FFDE59;
     border-color: #FEB139;
-    color: #3e3c3d;
     font-size: 22px;
     cursor: url(../img/tarritomiel.png), auto;
-    /*cursor: url(../img/logobee.png);*/
 }
