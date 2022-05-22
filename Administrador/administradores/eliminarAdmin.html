@@ -7,6 +7,7 @@
     <title>Eliminar Administrador</title>
     <link rel="stylesheet" href="../../elementos/style/iniciarRegistrar.css">
     <link rel="shortcut icon" href="../../elementos/img/bee.png">
+    <script src="../javascript/validacion.js"></script>
 </head>
 <body>
     <div class="regini">
@@ -16,14 +17,16 @@
             <br>
             <form name="formularioAdmin" method="post" action="../principalAdmin.html">
                 <label>Introduce el usuario del Administrador: </label>
-                <input type="text" name="">
+                <input type="text" id="usuAE">
                 <br><br>
                 <hr size="3">
                 <br>
                 <label>Introduce tu Contraseña: </label>
-                <input type="password" id="">
-                <br><br><br>
-                <p align="right"><button type="submit" onclick="">Continuar</button></p>
+                <input type="password" id="pssAE">
+                <br><br>
+                <p id="error"></p>
+                <br>
+                <p align="right"><button type="submit" onclick="return validarEliminacionA(this)">Continuar</button></p>
                 
             </form>
         </div>

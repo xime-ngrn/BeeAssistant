@@ -78,6 +78,7 @@ function valPss(pss){
     return flag;
 }
 
+
 function validarInicio(formulario){
     var boletaUsuario = document.getElementById("iniBol").value;
     var usuario = document.getElementById("iniUsuario").value;
@@ -114,7 +115,8 @@ function validarRegistro(formulario){
     var nombreR = document.getElementById("regNombre").value;
     var appatR = document.getElementById("regappat").value;
     var apmatR = document.getElementById("regapmat").value;
-    var pssR = document.getElementById("regcontraseña").value;
+    var pssR = document.getElementById("regpss").value;
+    var pssR2 = document.getElementById("regpss2").value;
     var todoValido = true;
 
     if(valBol(boletaR) == true){
@@ -123,10 +125,16 @@ function validarRegistro(formulario){
                 if(valNombresApp(appatR) == true){
                     if(valNombresApp(apmatR) == true){
                         if(valPss(pssR) == true){
-                            todoValido = true;
+                            if(pssR == pssR2){
+                                todoValido = true;
+                            }else{
+                                todoValido = false;
+                                document.getElementById("regpss2").focus();
+                                document.getElementById("error").innerHTML="Las contraseñas no coinciden.";
+                            }
                         }else{
                             todoValido = false;
-                            document.getElementById("regcontraseña").focus();
+                            document.getElementById("regpss").focus();
                             document.getElementById("error").innerHTML="Genera una contraseña segura (min 8 caracteres, max 20, 1 minúscula, 1 mayúscula y 1 número)."
                         }
                     }else{

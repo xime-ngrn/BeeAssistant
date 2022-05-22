@@ -8,31 +8,41 @@ body{
     margin: 15px;
 }
 
-.regini{
+.bprincipal{
     display: flex;
     justify-content: center;
-    height: 620px;
 }
 .centrado{
     width: 500px;
-    height: 400px;
-    margin-top: 50px;
+    height: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: solid #F8B400;
+    border-radius: 7px;
+}.centradoInfo{
+    width: 620px;
+    height: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding: 20px;
     border: solid #F8B400;
     border-radius: 7px;
 }
 .centradoUs{
     width: 600px;
-    height: 400px;
-    margin-top: 55px;
+    height: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding: 20px;
     border: solid #F8B400;
     border-radius: 7px;
 }
-.centrador{
-    width: 450px;
-    height: 475px;
-    margin-top: 65px;
+.centradoCI{
+    width: 600px;
+    height: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding: 20px;
     border: solid #F8B400;
     border-radius: 7px;

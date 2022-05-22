@@ -7,6 +7,7 @@
     <title>Agregar Administrador</title>
     <link rel="stylesheet" href="../../elementos/style/iniciarRegistrar.css">
     <link rel="shortcut icon" href="../../elementos/img/bee.png">
+    <script src="../javascript/validacion.js"></script>
 </head>
 <body>
     <div class="regini">
@@ -15,18 +16,22 @@
             <center><h2>Agregar Administrador</h2></center>
             <br>
             <form name="formularioAdmin" method="post" action="../principalAdmin.html">
-                <label>Introduce el usuario: </label>
-                <input type="text" name="">
-                <br><br>
-                <label>Genera una contraseña: </label>
-                <input type="password" name="">
-                <br><br><br>
+                <label>Introduce el Usuario: </label>
+                <input type="text" id="usuA">
+                <br>
+                <label>Introduce el Nombre de Usuario: </label>
+                <input type="text" id="nomA">
+                <br>
+                <label>Genera una Contraseña: </label>
+                <input type="password" id="pssA">
+                <br>
                 <hr size="3">
                 <br>
                 <label>Introduce tu Contraseña: </label>
-                <input type="password" id="modificarPassAdmin">
-                <p align="right"><button type="submit" onclick="">Continuar</button></p>
-                
+                <input type="password" id="APassAdmin">
+                <br>
+                <p id="error"></p>
+                <p align="right"><button type="submit" onclick="return validarNA(this)">Continuar</button></p>
             </form>
         </div>
     </div>

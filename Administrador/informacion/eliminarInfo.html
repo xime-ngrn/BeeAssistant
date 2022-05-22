@@ -7,6 +7,7 @@
     <title>Eliminar Información</title>
     <link rel="stylesheet" href="../../elementos/style/iniciarRegistrar.css">
     <link rel="shortcut icon" href="../../elementos/img/bee.png">
+    <script src="../javascript/validacionComunicados.js"></script>
 </head>
 <body>
     <div class="regini">
@@ -16,14 +17,18 @@
             <br>
             <form name="formularioAdmin" method="post" action="../principalAdmin.html">
                 <label>Introduce el título del Comunicado: </label>
-                <input type="text" name="">
+                <input type="text" id="tituloEC">
                 <br><br>
                 <hr size="3">
                 <br>
                 <label>Introduce tu Contraseña: </label>
-                <input type="password" id="">
-                <br><br><br>
-                <p align="right"><button type="submit" onclick="">Continuar</button></p>
+                <input type="password" id="pssEC">
+                <br>
+                <label>Confirma tu Contraseña: </label>
+                <input type="password" id="pssEC2">
+                <br><br>
+                <p id="error"></p>
+                <p align="right"><button type="submit" onclick="return validarEliminacion(this)">Continuar</button></p>
                 
             </form>
         </div>

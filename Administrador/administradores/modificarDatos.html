@@ -7,7 +7,7 @@
     <title>Modificar datos</title>
     <link rel="stylesheet" href="../../elementos/style/stylemodificadores.css">
     <link rel="shortcut icon" href="../../elementos/img/bee.png">
-    <script src="../../elementos/javascript/administrador.js"></script>
+    <script src="../javascript/validacion.js"></script>
 </head>
 <body>
     <div class="principal">
@@ -16,23 +16,24 @@
             <br>
             <form method="post" action="../principalAdmin.html">
                 <label>Usuario: </label>
-                <input type="text" placeholder="Obtención Usuario Admin" readonly>
+                <input type="text" id="usuarioAdmin" placeholder="Obtención Usuario Admin" readonly>
                 <br><br>
                 <label>Nuevo Usuario Administrador: </label>
-                <input type="text" id="modificarUsuarioAdmin" placeholder="Usuario">
+                <input type="text" id="modificarUAdmin" placeholder="Usuario">
                 <br><br>
-                <label>Nombre de Administrador: </label>
+                <label>Nuevo Nombre de Administrador: </label>
                 <input type="text" id="modificarNomAdmin" placeholder="Nombre">
                 <br><br>
+                <label>Nueva Contraseña: </label>
+                <input type="password" id="modificarPssAdmin">
+                <br>
                 <hr size="3">
                 <br>
                 <label>Contraseña: </label>
-                <input type="password" id="modificarPassAdmin">
+                <input type="password" id="CPssAdmin">
                 <br>
                 <p id="error"></p>
-                <br>
-                <p align="right"><button type="submit" onclick="">Continuar</button></p>
-                
+                <p align="right"><button type="submit" onclick="return validarModidicar(this)">Continuar</button></p>
             </form>
         </div>
     </div>
