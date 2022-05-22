@@ -15,21 +15,22 @@
             <center><h2>Modificador Datos Administrador</h2></center>
             <br>
             <form method="post" action="../principalAdmin.html">
-                <label>Modifica los datos que desees </label>
-                <br><br><br>
                 <label>Usuario: </label>
                 <input type="text" placeholder="Obtención Usuario Admin" readonly>
                 <br><br>
                 <label>Nuevo Usuario Administrador: </label>
-                <input type="text" id="modificarUsuarioAdmin">
+                <input type="text" id="modificarUsuarioAdmin" placeholder="Usuario">
                 <br><br>
                 <label>Nombre de Administrador: </label>
-                <input type="text" id="modificarNomAdmin">
-                <br><br><br>
+                <input type="text" id="modificarNomAdmin" placeholder="Nombre">
+                <br><br>
                 <hr size="3">
                 <br>
                 <label>Contraseña: </label>
                 <input type="password" id="modificarPassAdmin">
+                <br>
+                <p id="error"></p>
+                <br>
                 <p align="right"><button type="submit" onclick="">Continuar</button></p>
                 
             </form>

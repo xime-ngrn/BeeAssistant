@@ -7,32 +7,35 @@
     <title>Registrarse</title>
     <link rel="stylesheet" href="../elementos/style/iniciarRegistrar.css">
     <link rel="shortcut icon" href="../elementos/img/bee.png">
+    <script src="javascript/validacion.js"></script>
+
 </head>
 <body>
     <div class="regini">
         <div class="centrador">
             <center><h2>Registrarse</h2></center>
             <br>
-            <form name="registro" method="post" action="preferencias.html">
-                <label>Introduce tu número boleta: </label>
-                <input type="text" name="regBol">
+            <form name="registro" method="post" action="inicioSesion.html">
+                <label>Introduce tu Número Boleta: </label>
+                <input type="text" id="regBol">
                 <br><br>
-                <label>Escribe tu nombre de usuario: </label>
-                <input type="text" name="regUsuario">
+                <label>Escribe tu Nombre de Usuario: </label>
+                <input type="text" id="regUsuario">
+                <br><br>
+                <label>Escribe tu Nombre: </label>
+                <input type="text" id="regNombre">
                 <br><br>
                 <label>Escribe tu Apellido Paterno: </label>
-                <input type="text" name="regappat">
+                <input type="text" id="regappat">
                 <br><br>
                 <label>Escribe tu Apellido Materno: </label>
-                <input type="text" name="regapmat">
+                <input type="text" id="regapmat">
                 <br><br>
-                <label>Ingresa un correo (personal o institucional): </label>
-                <input type="email" name="regcorreo">
-                <br><br>
-                <label>Ingresa una contraseña: </label>
-                <input type="password" name="regcontraseña">
-                <br><br>
-                <p align="right"><button type="submit" onclick="">Continuar</button></p>
+                <label>Ingresa una Contraseña: </label>
+                <input type="password" id="regcontraseña">
+                <br>
+                <p id="error"></p>
+                <p align="right"><button type="submit" onclick="return validarRegistro(this)">Continuar</button></p>
                 
             </form>
         </div>
