@@ -12,6 +12,20 @@ function valnbs(prmtr){
     return flag;
 }
 
+function valBol(boleta){
+    var bol = boleta;
+    var boletaCorrecta = /^20[0-9]{8}/;
+    var flag = true;
+
+    if(boletaCorrecta.test(bol) == true){
+        flag = true;
+    }else{
+        flag = false;
+    }
+
+    return flag;
+}
+
 function valUsuario(usuario){
     var usu = usuario;
     var usuarioCorrecto = /^\w{5,20}$/;
@@ -28,7 +42,7 @@ function valUsuario(usuario){
 
 function valNombresApp(napm){
     var nom = napm;
-    var nomCorrecto = /^[A-Z]\w{1,30}/;
+    var nomCorrecto = /^[A-Z][a-z]{1,30}$/;
     var flag = true;
 
     if(nomCorrecto.test(nom) == true){
@@ -55,7 +69,7 @@ function valPss(pss){
                 flag = false;
             }
         }else{
-            flag = flase;
+            flag = false;
         }
     }else{
         flag = false;
@@ -65,83 +79,67 @@ function valPss(pss){
 }
 
 
-function validarInicio(formulario){
-    var usuI = document.getElementById("iniBolA").value;
-    var pssI = document.getElementById("iniPssA").value;
-    var todoValido = true;
-
-    if(valnbs(usuI) == true){
-        if(valnbs(pssI) == true){
-            todoValido = true;
-            document.getElementById("error").innerHTML=""
-        }else{
-            todoValido = false;
-            document.getElementById("iniPssA").focus();
-            document.getElementById("error").innerHTML="La contraseña no es válida.";
-        }
-    }else{
-        todoValido = false;
-        document.getElementById("iniBolA").focus();
-        document.getElementById("error").innerHTML="El usuario no es válido.";
-    }
-
-    return todoValido;
-}
-
 function validarModidicar(formulario){
-    var usuM = document.getElementById("modificarUAdmin").value;
+    var bolAM = document.getElementById("modificarBolAdmin").value;
     var nomAM = document.getElementById("modificarNomAdmin").value;
     var pssM = document.getElementById("modificarPssAdmin").value;
     var pssA = document.getElementById("CPssAdmin").value;
     var todoValido = false;
 
-    if(valUsuario(usuM) == true){
-        if(valNombresApp(nomAM) == true){
-            if(valPss(pssM) == true){
-                if(valnbs(pssA) == true){
+    if(valBol(bolAM) == true){
+        if (valNombresApp(nomAM) == true) {
+            if (valPss(pssM) == true) {
+                if (valnbs(pssA) == true) {
                     todoValido = true;
-                    document.getElementById("error").innerHTML="";
-                }else{
+                    document.getElementById("error").innerHTML = "";
+                } else {
                     todoValido = false;
                     document.getElementById("CPssAdmin").focus();
-                    document.getElementById("error").innerHTML="Este campo es requerido.";
+                    document.getElementById("error").innerHTML = "Este campo es requerido.";
                 }
-            }else{
+            } else {
                 todoValido = false;
                 document.getElementById("modificarPssAdmin").focus();
-                document.getElementById("error").innerHTML="Genera una contraseña segura (min 8 caracteres, max 20, 1 minúscula, 1 mayúscula y 1 número).";
+                document.getElementById("error").innerHTML = "Genera una contraseña segura (min 8 caracteres, max 20, 1 minúscula, 1 mayúscula y 1 número).";
             }
-        }else{
-            todoValido=false;
+        } else {
+            todoValido = false;
             document.getElementById("modificarNomAdmin").focus();
-            document.getElementById("error").innerHTML="El nombre no es válido. Debe iniciar con mayúscula.";
+            document.getElementById("error").innerHTML = "El nombre no es válido (debe iniciar con mayúscula, lo demás en minúsculas y no se aceptan acentos).";
         }
     }else{
         todoValido = false;
-        document.getElementById("modificarUAdmin").focus();
-        document.getElementById("error").innerHTML="El usuario no es válido. Debe contener al menos 5 caracteres y máximo 20."
+        document.getElementById("modificarBolAdmin").focus();
+        document.getElementById("error").innerHTML = "La boleta no es válida.";
     }
-    
+        
     return todoValido;
 }
 
 function validarNA(formulario){
-    var Ausu = document.getElementById("usuA").value;
+    var Aboleta = document.getElementById("bolA").value;
     var Anom = document.getElementById("nomA").value;
     var Apss = document.getElementById("pssA").value;
+    var Apss2 = document.getElementById("pssA2").value
     var pssAA = document.getElementById("APassAdmin").value;
     var todoValido=true;
-
-    if(valUsuario(Ausu) == true){
+    
+    if(valBol(Aboleta) == true){
         if(valNombresApp(Anom) == true){
             if(valPss(Apss) == true){
-                if(valnbs(pssAA) == true){
-                    todoValido = true;
-                    document.getElementById("error").innerHTML="";
+                if(Apss == Apss2){
+                    if(valnbs(pssAA) == true){
+                        todoValido = true;
+                        document.getElementById("error").innerHTML="";
+                    }else{
+                        todoValido=false;
+                        document.getElementById("APassAdmin").focus();
+                        document.getElementById("error").innerHTML="Este campo es requerido.";
+                    }
                 }else{
                     todoValido=false;
-                    document.getElementById("APassAdmin").focus();
-                    document.getElementById("error").innerHTML="Este campo es requerido.";
+                    document.getElementById("pssA2").focus();
+                    document.getElementById("error").innerHTML="Las contraseñas no coinciden.";
                 }
             }else{
                 todoValido = false;
@@ -151,58 +149,58 @@ function validarNA(formulario){
         }else{
             todoValido = false;
             document.getElementById("nomA").focus();
-            document.getElementById("error").innerHTML="El nombre no es válido. Debe iniciar con mayúscula.";
+            document.getElementById("error").innerHTML="El nombre no es válido (debe iniciar con mayúscula, lo demás en minúsculas y no se aceptan acentos).";
         }
     }else{
         todoValido = false;
-        document.getElementById("usuA").focus();
-        document.getElementById("error").innerHTML="El usuario no es válido. Debe contener al menos 5 caracteres y máximo 20."
+        document.getElementById("bolA").focus();
+        document.getElementById("error").innerHTML="La boleta no es válida.";
     }
 
     return todoValido;
 }
 
 function validarEliminacionA(formulario){
-    var usuarioE = document.getElementById("usuAE").value;
+    var boletaE = document.getElementById("boletaAE").value;
     var pssAE = document.getElementById("pssAE").value;
     var todoValido =true;
 
-    if(valnbs(usuarioE) == true){
+    if(valBol(boletaE) == true){
         if(valnbs(pssAE) == true){
             todoValido=true;
             document.getElementById("error").innerHTML="";
         }else{
             todoValido = false;
             document.getElementById("pssAE").focus();
-            document.getElementById("error").innerHTML="Este campo es requerido."
+            document.getElementById("error").innerHTML="Este campo es requerido.";
         }
     }else{
         todoValido = false;
-        document.getElementById("usuAE").focus();
-        document.getElementById("error").innerHTML="El usuario no es válido."
+        document.getElementById("boletaAE").focus();
+        document.getElementById("error").innerHTML="La boleta no es válida.";
     }
 
     return todoValido;
 }
 
 function validarEliminacionU(formulario){
-    var usuarioE = document.getElementById("usuUE").value;
+    var bolE = document.getElementById("bolUE").value;
     var pssAE = document.getElementById("pssUE").value;
     var todoValido =true;
 
-    if(valnbs(usuarioE) == true){
+    if(valBol(bolE) == true){
         if(valnbs(pssAE) == true){
             todoValido=true;
             document.getElementById("error").innerHTML="";
         }else{
             todoValido = false;
             document.getElementById("pssUE").focus();
-            document.getElementById("error").innerHTML="Este campo es requerido."
+            document.getElementById("error").innerHTML="Este campo es requerido.";
         }
     }else{
         todoValido = false;
-        document.getElementById("usuUE").focus();
-        document.getElementById("error").innerHTML="El usuario no es válido."
+        document.getElementById("bolUE").focus();
+        document.getElementById("error").innerHTML="El usuario no es válido.";
     }
 
     return todoValido;

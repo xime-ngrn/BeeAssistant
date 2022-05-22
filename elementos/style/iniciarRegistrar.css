@@ -61,6 +61,14 @@ nav{
     border: solid #F8B400;
     border-radius: 7px;
 }
+.centradoNA{
+    width: 450px;
+    height: 460px;
+    margin-top: 80px;
+    padding: 20px;
+    border: solid #F8B400;
+    border-radius: 7px;
+}
 
 hr{
     background-color: #FFF56D;

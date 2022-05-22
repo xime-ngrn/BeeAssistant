@@ -15,8 +15,16 @@ body{
 }
 .modificar{
     width: 450px;
-    height: 550px;
-    margin-top: 20px;
+    height: 500px;
+    margin-top: 40px;
+    padding: 20px;
+    border: solid #F8B400;
+    border-radius: 7px;
+}
+.modificarA{
+    width: 450px;
+    height: 530;
+    margin-top: 40px;
     padding: 20px;
     border: solid #F8B400;
     border-radius: 7px;
